@@ -1,0 +1,38 @@
+# Build outputs
+bin/
+obj/
+tmpbin/
+tmpobj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Compiled artifacts
+*.dll
+*.pdb
+*.mdb
+
+# NuGet
+*.nupkg
+packages/
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.cache
+*.~
+*~
+
+# Generated package archives
+github/
+thunderstore/
+thunderstore-tools/
