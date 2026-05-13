@@ -4,6 +4,31 @@ LC Mic Recovery is a BepInEx plugin for Lethal Company that attempts to recover 
 
 The plugin monitors the active Dissonance microphone state, detects common failure conditions, and can trigger a controlled recovery sequence either automatically or manually through a configurable keybind.
 
+## Project Principles
+
+The following bilingual notes summarize the design principles used for LC Mic Recovery: conservative recovery, local-first reset behavior, and guarded game-side integration.
+
+<details open>
+<summary>View principles document</summary>
+
+<p align="center">
+  <img src="docs/images/lcmicrecovery-principles-01.png" alt="LC Mic Recovery Principles - Page 1" width="820">
+</p>
+
+<p align="center">
+  <img src="docs/images/lcmicrecovery-principles-02.png" alt="LC Mic Recovery Principles - Page 2" width="820">
+</p>
+
+<p align="center">
+  <img src="docs/images/lcmicrecovery-principles-03.png" alt="LC Mic Recovery Principles - Page 3" width="820">
+</p>
+
+<p align="center">
+  <img src="docs/images/lcmicrecovery-principles-04.png" alt="LC Mic Recovery Principles - Page 4" width="820">
+</p>
+
+</details>
+
 ## Features
 
 - Automatic microphone recovery when the active microphone name is empty.
