@@ -2,6 +2,20 @@
 
 All notable changes to LC Mic Recovery are documented in this file.
 
+## 0.3.7
+
+### Added
+
+- Added `LanguageMode` with `Auto`, `English`, and `Chinese` modes for user-facing logs and recovery notifications.
+- Added LC-Chinese-Project / `V81TestChn` detection so `Auto` mode follows Chinese modpacks while keeping vanilla game installs in English.
+- Added HUD font-safety fallback behavior: `Chinese` mode keeps BepInEx logs in Chinese while in-game HUD notifications fall back to English when Chinese HUD font support is not detected.
+- Added recovery completion detail logging when five-step, debug, or state logging is enabled, so the full recovery note remains available outside the compact HUD notification.
+
+### Changed
+
+- Updated manual recovery, automatic recovery, five-step recovery, game-side reset, and startup logs to use the selected user-facing language.
+- Recovery completion notifications now use a compact in-game HUD message, while detailed completion context is recorded in the BepInEx log.
+
 ## 0.3.6
 
 ### Added

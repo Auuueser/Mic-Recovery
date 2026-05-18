@@ -18,5 +18,5 @@ using System.Runtime.InteropServices;
 [assembly: Guid("a1b2c3d4-e5f6-4789-abcd-1234567890ab")]
 
 // 程序集的版本信息
-[assembly: AssemblyVersion("0.3.6.0")]
-[assembly: AssemblyFileVersion("0.3.6.0")]
+[assembly: AssemblyVersion("0.3.7.0")]
+[assembly: AssemblyFileVersion("0.3.7.0")]

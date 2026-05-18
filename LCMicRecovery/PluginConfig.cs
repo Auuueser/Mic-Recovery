@@ -6,6 +6,7 @@ namespace LCMicRecovery
     internal static class PluginConfig
     {
         internal static ConfigEntry<bool> EnableMod;
+        internal static ConfigEntry<string> LanguageMode;
 
         internal static ConfigEntry<bool> EnableDebugLog;
         internal static ConfigEntry<bool> EnableStateLogs;
@@ -49,6 +50,12 @@ namespace LCMicRecovery
                 "EnableMod",
                 true,
                 "总开关。关闭后模组不执行任何恢复逻辑。");
+
+            LanguageMode = config.Bind(
+                "Localization",
+                "LanguageMode",
+                "Auto",
+                "User-facing language. Auto uses Chinese only when LC-Chinese-Project / V81TestChn is detected; English forces English; Chinese forces Chinese logs but falls HUD back to English when Chinese HUD font support is not detected. / 用户可见语言。Auto 检测到 LC-Chinese-Project / V81TestChn 时使用中文，否则英文；English 强制英文；Chinese 强制中文日志，但未检测到中文 HUD 字体支持时游戏内提示回退英文。");
 
             EnableDebugLog = config.Bind(
                 "Logging",
